@@ -1,5 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
 
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+}
+
 const fonts = { mono: `'Menlo', monospace` }
 
 const breakpoints = {
@@ -10,6 +15,14 @@ const breakpoints = {
 }
 
 const theme = extendTheme({
+  config,
+  styles: {
+    global: {
+      body: {
+        bg: 'body-bg',
+      },
+    }
+  },
   semanticTokens: {
     colors: {
       text: {
@@ -24,6 +37,10 @@ const theme = extendTheme({
         default: '#FF0080',
         _dark: '#fbec8f',
       },
+      'body-bg': {
+        default: '#16161D',
+        _dark: '#0F0F1B',
+      }
     },
     radii: {
       button: '12px',
