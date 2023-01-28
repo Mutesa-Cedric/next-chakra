@@ -1,0 +1,61 @@
+{
+    "trending": [
+        {
+            "name": "Airfoil DAO",
+            "logo_url": "/cardLogo(1).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Thala Labs",
+            "logo_url": "/cardLogo.svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Uniswap Aptos",
+            "logo_url": "/cardLogo(2).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        }
+    ],
+    "sortable": [
+        {
+            "name": "Move Dollar DAO",
+            "logo_url": "/cardLogo(3).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Airfoil DAO",
+            "logo_url": "/cardLogo(1).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Thala Labs",
+            "logo_url": "/cardLogo.svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Uniswap Aptos",
+            "logo_url": "/cardLogo(2).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Move Dollar DAO",
+            "logo_url": "/cardLogo(3).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Airfoil DAO",
+            "logo_url": "/cardLogo(1).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Thala Labs",
+            "logo_url": "/cardLogo.svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        },
+        {
+            "name": "Uniswap Aptos",
+            "logo_url": "/cardLogo(2).svg",
+            "description": "Swap, earn and build on the leading decentralized crypto trading protocol."
+        }
+    ]
+}

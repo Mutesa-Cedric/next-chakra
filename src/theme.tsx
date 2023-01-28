@@ -17,11 +17,17 @@ const breakpoints = {
 const theme = extendTheme({
   config,
   styles: {
-    global: {
+    global: (props) => ({
+      "*": {
+        borderColor: "gray.700",
+        // color: 'white'
+      },
+
       body: {
         bg: 'body-bg',
       },
-    }
+    }),
+    
   },
   semanticTokens: {
     colors: {

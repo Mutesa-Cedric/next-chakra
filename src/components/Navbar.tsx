@@ -15,13 +15,13 @@ const Navbar = () => {
     >
       <Box mr="auto" display={'flex'} alignItems="center" gap={2}>
         <Image src="/Logo.svg" alt="The logo" boxSize={8} />
-        <Text as='b' fontSize='2xl'>Parliament</Text>
+        <Text as='b' fontSize='2xl' color={'gray.300'}>Parliament</Text>
       </Box>
       <Spacer />
       <Flex gap={4} alignItems="center">
         <Flex py={1} pl={1} pr={2} alignItems="center" rounded="full" gap={2} bg="gray.800">
           <Image src="/cardLogo(1).svg" alt="The logo" boxSize={8} rounded="full" />
-          <Text as='b' fontSize='md'>maxxthedesign.eth</Text>
+          <Text as='b' fontSize='md' color={'gray.300'}>maxxthedesign.eth</Text>
         </Flex>
         <IconButton icon={<SlOptions />} aria-label="icon-button" rounded={"full"} />
         <IconButton icon={<BsFillBellFill />} aria-label="icon-button" rounded={"full"} />

@@ -1,7 +1,15 @@
 import { Badge, Box, Flex, Image, Tag, TagLabel, TagLeftIcon, Text } from "@chakra-ui/react"
 import { AiOutlineUser } from 'react-icons/ai'
 
-const TrendingCard = () => {
+interface TrendingCardProps {
+    name: string;
+    description: string;
+    logo_url: string;
+    members?: number;
+    tags?: string[];
+}
+
+const TrendingCard = ({name, description, logo_url, members, tags}: TrendingCardProps) => {
     return (
         <Flex
             direction="column"
@@ -18,7 +26,7 @@ const TrendingCard = () => {
             backdropBlur={"62px"}
         >
             <Image
-                src="/cardLogo(1).svg"
+                src={logo_url}
                 alt="The logo"
                 boxSize={180}
                 p={4}
@@ -31,8 +39,8 @@ const TrendingCard = () => {
                 bg={"radial-gradient(100% 100% at 50% 0%, rgba(130, 130, 164, 0.12) 0%, rgba(130, 130, 164, 0) 100%)"}
             />
 
-            <Text as="b" fontSize="2xl">AirFoil DAO</Text>
-            <Text as="span" color="gray.400" maxWidth={400} px={8}>Swap, earn and build on the leading decentralized crypto trading protocol.</Text>
+            <Text as="b" fontSize="2xl" color={"white"}>{name}</Text>
+            <Text as="span" color="gray.400" maxWidth={400} px={8}>{description}</Text>
             <Flex gap={2} alignItems="center" >
                 <Tag rounded={"full"} fontSize={"lg"} px={4} py={2}>
                     <TagLeftIcon boxSize="24px" color="gray.500" as={AiOutlineUser} />

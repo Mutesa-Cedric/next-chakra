@@ -1,12 +1,20 @@
 import { Flex, Image, Tag, TagLabel, TagLeftIcon, Text } from "@chakra-ui/react"
 import { AiOutlineUser } from 'react-icons/ai'
 
-const SortCard = () => {
+interface SortCardProps {
+    name: string;
+    description: string;
+    logo_url: string;
+    members?: number;
+    tags?: string[];
+}
+
+const SortCard = ({ name, description, logo_url, members, tags }: SortCardProps) => {
     return (
         <Flex direction={'column'} rounded='50px' borderWidth={1} overflow="hidden" w="fit-content" borderColor="gray.800">
             <Flex p={4} gap={5}>
                 <Image
-                    src="/cardLogo(1).svg"
+                    src={logo_url}
                     alt="The logo"
                     boxSize={28}
                     p={2}
@@ -17,8 +25,8 @@ const SortCard = () => {
                     borderRadius="30px"
                 />
                 <Flex direction={'column'} gap={2}>
-                    <Text as='b' fontSize='xl'>Move Dollar DAO</Text>
-                    <Text as='span' color="gray.400" fontSize="lg" noOfLines={2}>Swap, earn and build on the leading decentralized crypto trading protocol.</Text>
+                    <Text as='b' fontSize='xl' color={'white'}>{name}</Text>
+                    <Text as='span' color="gray.400" fontSize="lg" noOfLines={2}>{description}</Text>
                 </Flex>
             </Flex>
             <Flex gap={2} alignItems="center" bg={'gray.900'} px={10} py={4}>
